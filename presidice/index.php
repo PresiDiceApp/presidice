@@ -8,7 +8,7 @@
         <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     </head>
 
-<body role="document" style="margin:20px;color:red">
+<body role="document" style="margin:20px;color:white">
 	<div class="container theme-showcase" role="main">
     	<div class="">
         	<h1>El presi dice...</h1>
