@@ -8,7 +8,9 @@
         <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     </head>
 
+
 <body role="document" style="margin:20px;color:blue">
+
 
 
 	<div class="container theme-showcase" role="main">
