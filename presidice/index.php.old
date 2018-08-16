@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>El presi dice... (bullying al presi)</title>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    </head>
+<body role="document" style="margin:20px">
+	<div class="container theme-showcase" role="main">
+    	<div class="">
+        	<h1>El presi dice...</h1>
+        	<p>...comparte tu sabiduria en la boca del presi.</p>
+		</div>
+        <div class="row"> 		
+            <div class="col-lg-6">
+            <form name="forma" action="jpgg.php" method="post" target="marco">
+            	<input type="hidden" name="r" id="r">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tu sabiduría... " id="frase" name="frase">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Go!</button>
+                    </span>
+                </div><!-- /input-group -->
+             </form>
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <hr>
+        	<div class="col-lg-8">
+            	<iframe name="marco" frameborder="0" width="100%" height="500"></iframe>
+            </div>
+            <div class="col-lg-4">
+            	<h4>Frases de sabiduria del presi:</h4>
+            	<?
+					$file = fopen("presidice.txt", "r");
+					while(!feof($file)) {
+						$c = fgets($file);
+						echo "<a href=\"javascript:otravez('$c');\">$c</a><br />";
+					}
+					fclose($file);
+                ?>
+            </div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript">
+		function otravez(s){
+			document.getElementById('frase').value = s;
+			document.getElementById('r').value = 1;
+			document.forma.submit();
+		}
+    </script>
+</body>
+</html>
