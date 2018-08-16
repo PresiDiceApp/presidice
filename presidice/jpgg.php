@@ -49,7 +49,7 @@
 		$renglonAux = $renglon;
 	}
 	
-	///inserta el texto
+	///inserta el texto texto en la imagen para generar los memes
 	imagettftext($fondo, $tamLetraS, $angulo, $margenI, $margenS-$offset, $colorS, $fuente, $renglonAux);
     imagettftext($fondo, $tamLetraS, $angulo, $margenI, $margenS+$offset, $colorS, $fuente, $renglonAux);
 	imagettftext($fondo, $tamLetraS, $angulo, $margenI-$offset, $margenS, $colorS, $fuente, $renglonAux);
