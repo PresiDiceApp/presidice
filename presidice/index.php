@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
     	<title>Frases celebres del presi::Modificado 17 de agosto de 2018</title>
+=======
+    	<title>Frases Celebres de El Presi Master</title>
+>>>>>>> 96ebec14efee83a8939f4b704a8c47de95ef6ecd
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     </head>
