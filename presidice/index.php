@@ -3,22 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Frases celebres del presi</title>
+    	<title>Frases celebres del presi::Modificado 17 de agosto de 2018</title>
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     </head>
 
 
-<body role="document" style="margin:20px;color:blue">
-
-
+<body role="document" style="margin:20px;color:green">
 
 	<div class="container theme-showcase" role="main">
     	<div class="">
         	<h1>El presi dice...</h1>
         	<p>...comparte tu sabiduria en la boca del presi.</p>
 		</div>
-        <div class="row"> 		
+        <div class="row">
             <div class="col-lg-6">
             <form name="forma" action="jpgg.php" method="post" target="marco">
             	<input type="hidden" name="r" id="r">
